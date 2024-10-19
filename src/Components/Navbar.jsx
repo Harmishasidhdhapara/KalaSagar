@@ -10,7 +10,7 @@ const Navbar = () => {
        
 
         <div className='flex items-center justify-between py-5 font-medium'>
-            <img src="logooo.png"  className="w-36"alt="" />
+            <img src="logooo.png" className="w-36"alt="" />
 <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
 
      <NavLink to='/' className='flex flex-col items-center gap-1'>

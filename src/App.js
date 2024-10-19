@@ -11,6 +11,7 @@ import Cart from './Pages/Cart';
 import Login from './Pages/Login';
 import Placeorder from './Pages/Placeorder';
 import Order from './Pages/Order';
+import ShopContexProvider from './Contex/ShopContex';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
   
    <div className='px-4 sm:px-[7vw] lg:px-[9vw]'>
    <BrowserRouter>
+   <ShopContexProvider>
    <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/contact' element={<Contact/>}/>
@@ -29,6 +31,7 @@ function App() {
             <Route path='/placeorder' element={<Placeorder/>}/>
             <Route path='/order' element={<Order/>}/>
         </Routes>
+        </ShopContexProvider>
   </BrowserRouter>
   
    
